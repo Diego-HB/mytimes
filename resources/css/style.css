@@ -1,0 +1,42 @@
+* {
+	background: lightyellow;
+	margin: 0;
+	padding: 0;
+
+}
+
+/* -- Header Section --*/
+header {
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.logo span {
+	color: MediumAquamarine;
+}
+
+nav span {
+	display: inline-block;
+}
+
+/* -- Main Section --*/
+
+.content {
+	border: 1px solid red;
+}
+
+.column.large {
+	width: 630px;
+	border: 1px solid red;
+}
+
+.column.medium {
+	width: 300px;
+	border: 1px solid red;
+}
+
+.column.small {
+	width: 240px;
+	border: 1px solid red;
+}
