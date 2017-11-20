@@ -1,4 +1,8 @@
 
+body {
+	margin: 0;
+}
+
 /* -- Header Section --*/
 header {
 	font-family: Verdana;
@@ -6,7 +10,21 @@ header {
 	font-weight: bold;
 	display: flex;
 	justify-content: space-between;
+	background-color: white;
 	margin-bottom: 15px;
+	border-bottom: 1px solid black;
+	width: 100%;
+	height: 80px;
+	align-items: center;
+	position: fixed;
+	z-index: 1;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	padding-left: 30px;
 }
 
 .logo span {
@@ -14,19 +32,18 @@ header {
 	margin-left: 10px;
 }
 
-.logo, nav {
-	display: flex;
-	align-items: center;
-
+header nav {
+	display: block;
+	padding-right: 40px;
 }
 
-nav span {
-	margin-right: 40px;
+header nav span {
 	display: inline-block;
+	padding: 20px 10px;
 }
 
 nav a {
-	text-decoration: none;
+	text-decoration: underline;
 	color: black;
 }
 
@@ -34,6 +51,9 @@ nav a {
 
 .content {
 	display: flex;
+	width: 1232px;
+	margin: 0 auto 78px auto;
+	padding-top: 116px;
 }
 
 .column.large {
@@ -56,19 +76,18 @@ nav a {
 	flex-direction: column;
 }
 
-.first-story {
-
-}
-
 .main.image-content {
 	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
 	text-align: left;
+	margin-top: 0;
 }
 
 .image-content {
 	display: flex;
 	flex-direction: column;
 	height: 300px;
+	justify-content: center;
+	margin-top: 15px;
 }
 
 .image-content span {
@@ -142,6 +161,58 @@ nav a {
 }
 
 h2 {
-	font-size: 24px;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: Georgia;
+	font-size: 30px;
 	font-weight: bold;
+	font-style: normal;
+}
+
+
+/* -- Footer Section -- */
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: MediumAquamarine;
+	width: 100%;
+	height: 325px;
+	margin: auto;
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+.info {
+}
+
+footer nav span {
+	display: inline-block;
+	padding: 20px 10px;
+	text-decoration: underline;
+}
+
+.title {
+	font-family: Georgia;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	padding-right: 25px;
+	border-right: 2px solid white;
+}
+
+.info nav {
+	display: inline-block;
+	padding-left: 25px;
+}
+
+.copyright {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+.copyright p {
+	margin: 0;
 }
